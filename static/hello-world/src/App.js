@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div>
+      Data should appear here: 
       {data ? data : 'Loading...'}
     </div>
   );
