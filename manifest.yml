@@ -1,0 +1,17 @@
+modules:
+  jira:issuePanel:
+    - key: hello-world-custom-ui-hello-world-panel
+      resource: main
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: hello-world-custom-ui
+      icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/9e0011ab-2e98-4ee4-9989-3b51d1be42a9
